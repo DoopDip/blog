@@ -1,18 +1,24 @@
 ---
 layout: post
 title: "$X กับเงื่อนไข IN หรือ NOTIN ใน JasperReports"
-categories: [Tutorial]
-tags: [JasperReports, Report]
+categories: [JasperReports]
+tags: [Tutorial, Report]
 description: "วิธีใช้ $X ใน JasperReports"
 ---
 
 ตัวอย่าง ต้องการค้นหาชื่อนักเรียนจากตาราง Student โดย set ของชื่อนักเรียน Steve, Tony, Thor
 
-> SELECT * FROM STUDENT WHERE STUDENT_NAME IN ('Steve','Tony','Thor')
+    {% highlight sql %}
+     
+    SELECT * FROM STUDENT WHERE STUDENT_NAME IN ('Steve','Tony','Thor')
+    {% endhighlight %}
 
 เมื่อใช้ special syntax ($X) จะได้เป็น
 
-> SELECT * FROM STUDENT WHERE $X{IN, STUDENT_NAME, myList}
+    {% highlight sql %}
+     
+    SELECT * FROM STUDENT WHERE $X{IN, STUDENT_NAME, myList}
+    {% endhighlight %}
 
 โดย $X{} จะมี 3 parameter
 

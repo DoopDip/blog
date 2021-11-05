@@ -54,7 +54,6 @@ plugins:
 
 plainwhite:
   name: DoopDip
-  tagline: Developer
   date_format: "%d/%m/%Y"
   portfolio_image:  "assets/images/logo.png"
   disqus_shortname: doopdip
