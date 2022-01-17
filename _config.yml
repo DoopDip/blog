@@ -27,7 +27,7 @@ url: "https://doopdip.me" # the base hostname & protocol for your site, e.g. htt
 github_username:  doopdip
 
 # Build settings
-theme: plainwhite
+#theme: plainwhite
 remote_theme: samarsault/plainwhite-jekyll
 plugins:
   - jekyll-feed
